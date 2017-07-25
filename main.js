@@ -153,3 +153,14 @@ function changeCurrentSongDetails(songObj) {
     $('.current-song-name').text(songObj.name);
     $('.current-song-album').text(songObj.album);
 }
+ $('.fa-film').on('click', function() {
+            $('.dataTables_wrapper').addClass('hidden');
+            $('.immersive').removeClass('hidden');
+            
+          
+    });
+$('.fa-music').on('click', function() {
+            $('.dataTables_wrapper').removeClass('hidden');
+            $('.immersive').addClass('hidden');
+          
+    });
